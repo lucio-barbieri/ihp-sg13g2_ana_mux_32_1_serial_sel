@@ -1,0 +1,48 @@
+v {xschem version=3.4.6 file_version=1.2}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 80 -50 100 -50 {}
+L 4 80 -10 100 -10 {}
+L 4 80 10 100 10 {}
+L 4 80 -30 100 -30 {}
+L 4 80 30 100 30 {}
+L 4 0 -80 0 -60 {}
+L 4 0 60 0 80 {}
+L 4 -70 -30 -50 -30 {}
+L 4 -70 -10 -50 -10 {}
+L 4 80 50 100 50 {}
+L 4 -70 10 -50 10 {}
+L 4 -70 30 -50 30 {}
+B 5 97.5 -52.5 102.5 -47.5 {name=dout4 dir=out}
+B 5 97.5 -12.5 102.5 -7.5 {name=dout2 dir=out}
+B 5 97.5 7.5 102.5 12.5 {name=dout1 dir=out}
+B 5 97.5 -32.5 102.5 -27.5 {name=dout3 dir=out}
+B 5 97.5 27.5 102.5 32.5 {name=dout0 dir=out}
+B 5 -2.5 -82.5 2.5 -77.5 {name=VDD dir=in}
+B 5 -2.5 77.5 2.5 82.5 {name=VSS dir=in}
+B 5 -72.5 -32.5 -67.5 -27.5 {name=latch dir=in}
+B 5 -72.5 -12.5 -67.5 -7.5 {name=clk dir=in}
+B 5 97.5 47.5 102.5 52.5 {name=dout_serial dir=out}
+B 5 -72.5 7.5 -67.5 12.5 {name=din dir=in}
+B 5 -72.5 27.5 -67.5 32.5 {name=rst dir=in}
+P 4 5 80 -60 -50 -60 -50 60 80 60 80 -60 {}
+T {@symname} 11.5 64 0 0 0.3 0.3 {}
+T {@name} 35 -72 0 0 0.2 0.2 {}
+T {dout4} 75 -54 0 1 0.2 0.2 {}
+T {dout2} 75 -14 0 1 0.2 0.2 {}
+T {dout1} 75 6 0 1 0.2 0.2 {}
+T {dout3} 75 -34 0 1 0.2 0.2 {}
+T {dout0} 75 26 0 1 0.2 0.2 {}
+T {VDD} 4 -55 1 0 0.2 0.2 {}
+T {VSS} -4 55 3 0 0.2 0.2 {}
+T {latch} -45 -34 0 0 0.2 0.2 {}
+T {clk} -45 -14 0 0 0.2 0.2 {}
+T {dout_serial} 75 46 0 1 0.2 0.2 {}
+T {din} -45 6 0 0 0.2 0.2 {}
+T {rst} -45 26 0 0 0.2 0.2 {}
