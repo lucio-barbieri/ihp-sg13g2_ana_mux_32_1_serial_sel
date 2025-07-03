@@ -41,17 +41,17 @@ N 320 260 360 260 {lab=s3}
 N 320 280 360 280 {lab=s2}
 N 320 300 360 300 {lab=s1}
 N 320 320 360 320 {lab=s0}
-N -170 40 -140 40 {lab=rst}
-N -170 20 -140 20 {lab=din}
-N -170 0 -140 -0 {lab=clk}
-N -170 -20 -140 -20 {lab=latch}
+N -260 40 -230 40 {lab=rst}
+N -260 20 -230 20 {lab=din}
+N -260 0 -230 0 {lab=clk}
+N -260 -20 -230 -20 {lab=latch}
 N 170 -340 170 -330 {lab=VDD}
 N 170 350 170 360 {lab=VSS}
 C {decoder.sym} 170 10 0 0 {name=x2}
-C {ipin.sym} -170 20 0 0 {name=p2 lab=din}
-C {ipin.sym} -170 40 0 0 {name=p3 lab=rst}
-C {ipin.sym} -170 0 0 0 {name=p4 lab=clk}
-C {ipin.sym} -170 -20 0 0 {name=p1 lab=latch}
+C {ipin.sym} -260 20 0 0 {name=p2 lab=din}
+C {ipin.sym} -260 40 0 0 {name=p3 lab=rst}
+C {ipin.sym} -260 0 0 0 {name=p4 lab=clk}
+C {ipin.sym} -260 -20 0 0 {name=p1 lab=latch}
 C {opin.sym} 360 260 0 0 {name=p5 lab=s3}
 C {opin.sym} 360 320 0 0 {name=p6 lab=s0}
 C {opin.sym} 360 300 0 0 {name=p7 lab=s1}
@@ -86,3 +86,4 @@ C {opin.sym} 360 -280 0 0 {name=p35 lab=s30}
 C {opin.sym} 360 -300 0 0 {name=p36 lab=s31}
 C {iopin.sym} 170 -340 3 0 {name=p37 lab=VDD}
 C {iopin.sym} 170 360 1 0 {name=p38 lab=VSS}
+C {shift_reg.sym} -170 150 0 0 {name=x1}
