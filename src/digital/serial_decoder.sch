@@ -41,17 +41,24 @@ N 320 260 360 260 {lab=s3}
 N 320 280 360 280 {lab=s2}
 N 320 300 360 300 {lab=s1}
 N 320 320 360 320 {lab=s0}
-N -260 40 -230 40 {lab=rst}
-N -260 20 -230 20 {lab=din}
-N -260 0 -230 0 {lab=clk}
-N -260 -20 -230 -20 {lab=latch}
+N -200 50 -170 50 {lab=/rst}
+N -200 30 -170 30 {lab=din}
+N -200 10 -170 10 {lab=clk}
+N -200 -10 -170 -10 {lab=latch}
 N 170 -340 170 -330 {lab=VDD}
 N 170 350 170 360 {lab=VSS}
+N -120 -240 -70 -240 {lab=VDD}
+N -120 -220 -70 -220 {lab=VSS}
+N -110 -70 -110 -60 {lab=VDD}
+N -110 100 -110 110 {lab=VSS}
+N -0 430 360 430 {lab=dout}
+N -0 70 -0 430 {lab=dout}
+N -20 70 -0 70 {lab=dout}
 C {decoder.sym} 170 10 0 0 {name=x2}
-C {ipin.sym} -260 20 0 0 {name=p2 lab=din}
-C {ipin.sym} -260 40 0 0 {name=p3 lab=rst}
-C {ipin.sym} -260 0 0 0 {name=p4 lab=clk}
-C {ipin.sym} -260 -20 0 0 {name=p1 lab=latch}
+C {ipin.sym} -200 30 0 0 {name=p2 lab=din}
+C {ipin.sym} -200 50 0 0 {name=p3 lab=/rst}
+C {ipin.sym} -200 10 0 0 {name=p4 lab=clk}
+C {ipin.sym} -200 -10 0 0 {name=p1 lab=latch}
 C {opin.sym} 360 260 0 0 {name=p5 lab=s3}
 C {opin.sym} 360 320 0 0 {name=p6 lab=s0}
 C {opin.sym} 360 300 0 0 {name=p7 lab=s1}
@@ -84,6 +91,13 @@ C {opin.sym} 360 -220 0 0 {name=p33 lab=s27}
 C {opin.sym} 360 -240 0 0 {name=p34 lab=s28}
 C {opin.sym} 360 -280 0 0 {name=p35 lab=s30}
 C {opin.sym} 360 -300 0 0 {name=p36 lab=s31}
-C {iopin.sym} 170 -340 3 0 {name=p37 lab=VDD}
-C {iopin.sym} 170 360 1 0 {name=p38 lab=VSS}
-C {shift_reg.sym} -170 150 0 0 {name=x1}
+C {iopin.sym} -120 -240 2 0 {name=p37 lab=VDD}
+C {iopin.sym} -120 -220 2 0 {name=p38 lab=VSS}
+C {shift_reg.sym} -110 20 0 0 {name=x1}
+C {lab_pin.sym} -70 -240 2 0 {name=p39 sig_type=std_logic lab=VDD}
+C {lab_pin.sym} -70 -220 2 0 {name=p40 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 170 -340 1 0 {name=p41 sig_type=std_logic lab=VDD}
+C {lab_pin.sym} 170 360 3 0 {name=p42 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} -110 -70 1 0 {name=p43 sig_type=std_logic lab=VDD}
+C {lab_pin.sym} -110 110 3 0 {name=p44 sig_type=std_logic lab=VSS}
+C {opin.sym} 360 430 0 0 {name=p45 lab=dout}
