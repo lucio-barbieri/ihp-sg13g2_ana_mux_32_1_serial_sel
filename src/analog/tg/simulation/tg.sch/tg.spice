@@ -1,0 +1,7 @@
+** sch_path: /home/designer/shared/ihp-sg13g2_ana_mux_32_1_serial_sel/src/analog/tg/tg.sch
+.subckt tg B C A BP BN
+*.PININFO B:B A:B BN:B BP:B C:B
+M1 A C B BN sg13_lv_nmos w=12u l=0.13u ng=3 m=1
+M2 A net1 B BP sg13_lv_pmos w=30u l=0.13u ng=3 m=1
+x1 C BP BN net1 sg13g2_inv_1
+.ends
