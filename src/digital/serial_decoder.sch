@@ -54,7 +54,6 @@ N -110 100 -110 110 {lab=VSS}
 N -0 430 360 430 {lab=dout}
 N -0 70 -0 430 {lab=dout}
 N -20 70 -0 70 {lab=dout}
-C {decoder.sym} 170 10 0 0 {name=x2}
 C {ipin.sym} -200 30 0 0 {name=p2 lab=din}
 C {ipin.sym} -200 50 0 0 {name=p3 lab=/rst}
 C {ipin.sym} -200 10 0 0 {name=p4 lab=clk}
@@ -93,7 +92,6 @@ C {opin.sym} 360 -280 0 0 {name=p35 lab=s30}
 C {opin.sym} 360 -300 0 0 {name=p36 lab=s31}
 C {iopin.sym} -120 -240 2 0 {name=p37 lab=VDD}
 C {iopin.sym} -120 -220 2 0 {name=p38 lab=VSS}
-C {shift_reg.sym} -110 20 0 0 {name=x1}
 C {lab_pin.sym} -70 -240 2 0 {name=p39 sig_type=std_logic lab=VDD}
 C {lab_pin.sym} -70 -220 2 0 {name=p40 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} 170 -340 1 0 {name=p41 sig_type=std_logic lab=VDD}
@@ -101,3 +99,5 @@ C {lab_pin.sym} 170 360 3 0 {name=p42 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} -110 -70 1 0 {name=p43 sig_type=std_logic lab=VDD}
 C {lab_pin.sym} -110 110 3 0 {name=p44 sig_type=std_logic lab=VSS}
 C {opin.sym} 360 430 0 0 {name=p45 lab=dout}
+C {/home/designer/shared/ihp-sg13g2_ana_mux_32_1_serial_sel/src/digital/shift_reg.sym} -110 20 0 0 {name=x3}
+C {/home/designer/shared/ihp-sg13g2_ana_mux_32_1_serial_sel/src/digital/decoder.sym} 170 10 0 0 {name=x4}

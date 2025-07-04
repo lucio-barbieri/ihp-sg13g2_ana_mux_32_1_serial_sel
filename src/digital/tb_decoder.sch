@@ -58,7 +58,7 @@ VDD VDD 0 dc=1.2
 
 .control
 save all
-set color0 = white
+*set color0 = white
 
 tran 1n 600n
 
@@ -124,5 +124,5 @@ C {devices/iopin.sym} -550 -20 2 0 {name=p35 lab=w3}
 C {devices/iopin.sym} -550 0 2 0 {name=p36 lab=w2}
 C {devices/iopin.sym} -550 20 2 0 {name=p37 lab=w1}
 C {devices/iopin.sym} -550 40 2 0 {name=p38 lab=w0}
-C {decoder.sym} -370 0 0 0 {name=x1}
 C {iopin.sym} -370 -360 3 0 {name=p2 lab=VDD}
+C {/home/designer/shared/ihp-sg13g2_ana_mux_32_1_serial_sel/src/digital/decoder.sym} -370 0 0 0 {name=x1}

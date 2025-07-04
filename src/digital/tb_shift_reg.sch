@@ -30,7 +30,7 @@ VDD VDD 0 dc=1.2
 
 .control
 save all
-set color0 = white
+*set color0 = white
 
 tran 1n 100n
 
@@ -62,5 +62,5 @@ C {devices/iopin.sym} 280 230 0 0 {name=p3 lab=dout1}
 C {devices/iopin.sym} 280 250 0 0 {name=p4 lab=dout0}
 C {iopin.sym} 170 130 3 0 {name=p5 lab=VDD}
 C {devices/gnd.sym} 170 310 0 0 {name=l3 lab=GND}
-C {shift_reg.sym} 170 220 0 0 {name=x1}
 C {devices/iopin.sym} 280 270 0 0 {name=p6 lab=dout_serial}
+C {/home/designer/shared/ihp-sg13g2_ana_mux_32_1_serial_sel/src/digital/shift_reg.sym} 170 220 0 0 {name=x1}
