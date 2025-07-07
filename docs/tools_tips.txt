@@ -1,0 +1,13 @@
+Preconditions to do LVS
+- sudo chown -R designer /opt/pdks/ihp-sg13g2/
+- klayout -e &
+- File --> new layout [create with same name as .sch]
+- File --> setup --> background --> background color
+
+Procedure to do LVS with stdcell:
+- gedit /opt/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/spice/sg13g2_stdcell.spice &
+- Find needed cell and copy .subckt definition (sg13g2_inv_1)
+- copy cell definiton into the .spice netlist coming from the schematic
+- modify ALL the first X in the transistors to M:
+- ORIGINAL: XX1 Y A VSS VSS sg13_lv_nmos w=740.00n l=130.00n ng=1 ad=0 as=0 pd=0 ps=0 m=1
+- NEW: MX1 Y A VSS VSS sg13_lv_nmos w=740.00n l=130.00n ng=1 ad=0 as=0 pd=0 ps=0 m=1
